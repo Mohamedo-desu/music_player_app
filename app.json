@@ -1,6 +1,6 @@
 {
 	"expo": {
-		"name": "music_player_app",
+		"name": "Music Player",
 		"slug": "music_player_app",
 		"version": "1.0.0",
 		"orientation": "portrait",
@@ -30,23 +30,24 @@
 			"output": "static",
 			"favicon": "./assets/favicon.png"
 		},
-		"plugins": [
-			"expo-router",
-			[
-				"expo-build-properties",
-				{
-					"ios": {
-						"newArchEnabled": true
-					},
-					"android": {
-						"newArchEnabled": true
-					}
-				}
-			]
-		],
+		"plugins": ["expo-router"],
 		"experiments": {
 			"typedRoutes": true,
 			"tsconfigPaths": true
+		},
+		"extra": {
+			"router": {
+				"origin": false
+			},
+			"eas": {
+				"projectId": "cee853b1-74af-4e57-9bcd-6dec75d2df2f"
+			}
+		},
+		"runtimeVersion": {
+			"policy": "appVersion"
+		},
+		"updates": {
+			"url": "https://u.expo.dev/cee853b1-74af-4e57-9bcd-6dec75d2df2f"
 		}
 	}
 }
